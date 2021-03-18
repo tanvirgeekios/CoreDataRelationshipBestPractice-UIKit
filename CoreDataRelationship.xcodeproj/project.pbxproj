@@ -9,23 +9,31 @@
 /* Begin PBXBuildFile section */
 		EBD6BBC02602D9CC00C9D1B4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD6BBBF2602D9CC00C9D1B4 /* AppDelegate.swift */; };
 		EBD6BBC22602D9CC00C9D1B4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD6BBC12602D9CC00C9D1B4 /* SceneDelegate.swift */; };
-		EBD6BBC42602D9CC00C9D1B4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD6BBC32602D9CC00C9D1B4 /* ViewController.swift */; };
+		EBD6BBC42602D9CC00C9D1B4 /* CollegeListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD6BBC32602D9CC00C9D1B4 /* CollegeListViewController.swift */; };
 		EBD6BBC72602D9CC00C9D1B4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBD6BBC52602D9CC00C9D1B4 /* Main.storyboard */; };
 		EBD6BBCA2602D9CC00C9D1B4 /* CoreDataRelationship.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EBD6BBC82602D9CC00C9D1B4 /* CoreDataRelationship.xcdatamodeld */; };
 		EBD6BBCC2602D9CD00C9D1B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBD6BBCB2602D9CD00C9D1B4 /* Assets.xcassets */; };
 		EBD6BBCF2602D9CD00C9D1B4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBD6BBCD2602D9CD00C9D1B4 /* LaunchScreen.storyboard */; };
+		EBD6BBD92602DEAE00C9D1B4 /* CollegeFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD6BBD82602DEAE00C9D1B4 /* CollegeFormViewController.swift */; };
+		EBD6BBDE2602E1AB00C9D1B4 /* DatabaseHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD6BBDD2602E1AB00C9D1B4 /* DatabaseHelper.swift */; };
+		EBD6BBE42602E5AF00C9D1B4 /* CollegeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD6BBE32602E5AF00C9D1B4 /* CollegeModel.swift */; };
+		EBD6BBE92602F95200C9D1B4 /* CollegeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD6BBE82602F95200C9D1B4 /* CollegeCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		EBD6BBBC2602D9CC00C9D1B4 /* CoreDataRelationship.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreDataRelationship.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBD6BBBF2602D9CC00C9D1B4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EBD6BBC12602D9CC00C9D1B4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		EBD6BBC32602D9CC00C9D1B4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EBD6BBC32602D9CC00C9D1B4 /* CollegeListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollegeListViewController.swift; sourceTree = "<group>"; };
 		EBD6BBC62602D9CC00C9D1B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EBD6BBC92602D9CC00C9D1B4 /* CoreDataRelationship.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataRelationship.xcdatamodel; sourceTree = "<group>"; };
 		EBD6BBCB2602D9CD00C9D1B4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EBD6BBCE2602D9CD00C9D1B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EBD6BBD02602D9CD00C9D1B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EBD6BBD82602DEAE00C9D1B4 /* CollegeFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollegeFormViewController.swift; sourceTree = "<group>"; };
+		EBD6BBDD2602E1AB00C9D1B4 /* DatabaseHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseHelper.swift; sourceTree = "<group>"; };
+		EBD6BBE32602E5AF00C9D1B4 /* CollegeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollegeModel.swift; sourceTree = "<group>"; };
+		EBD6BBE82602F95200C9D1B4 /* CollegeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollegeCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,9 +66,12 @@
 		EBD6BBBE2602D9CC00C9D1B4 /* CoreDataRelationship */ = {
 			isa = PBXGroup;
 			children = (
+				EBD6BBE72602F92700C9D1B4 /* Views */,
+				EBD6BBE22602E59900C9D1B4 /* Models */,
+				EBD6BBDC2602E17200C9D1B4 /* DatabaseHelper */,
+				EBD6BBE02602E1B300C9D1B4 /* Controllers */,
 				EBD6BBBF2602D9CC00C9D1B4 /* AppDelegate.swift */,
 				EBD6BBC12602D9CC00C9D1B4 /* SceneDelegate.swift */,
-				EBD6BBC32602D9CC00C9D1B4 /* ViewController.swift */,
 				EBD6BBC52602D9CC00C9D1B4 /* Main.storyboard */,
 				EBD6BBCB2602D9CD00C9D1B4 /* Assets.xcassets */,
 				EBD6BBCD2602D9CD00C9D1B4 /* LaunchScreen.storyboard */,
@@ -68,6 +79,47 @@
 				EBD6BBC82602D9CC00C9D1B4 /* CoreDataRelationship.xcdatamodeld */,
 			);
 			path = CoreDataRelationship;
+			sourceTree = "<group>";
+		};
+		EBD6BBDC2602E17200C9D1B4 /* DatabaseHelper */ = {
+			isa = PBXGroup;
+			children = (
+				EBD6BBDD2602E1AB00C9D1B4 /* DatabaseHelper.swift */,
+			);
+			path = DatabaseHelper;
+			sourceTree = "<group>";
+		};
+		EBD6BBE02602E1B300C9D1B4 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				EBD6BBE12602E1BF00C9D1B4 /* College */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		EBD6BBE12602E1BF00C9D1B4 /* College */ = {
+			isa = PBXGroup;
+			children = (
+				EBD6BBC32602D9CC00C9D1B4 /* CollegeListViewController.swift */,
+				EBD6BBD82602DEAE00C9D1B4 /* CollegeFormViewController.swift */,
+			);
+			path = College;
+			sourceTree = "<group>";
+		};
+		EBD6BBE22602E59900C9D1B4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EBD6BBE32602E5AF00C9D1B4 /* CollegeModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		EBD6BBE72602F92700C9D1B4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EBD6BBE82602F95200C9D1B4 /* CollegeCell.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,10 +192,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EBD6BBC42602D9CC00C9D1B4 /* ViewController.swift in Sources */,
+				EBD6BBC42602D9CC00C9D1B4 /* CollegeListViewController.swift in Sources */,
 				EBD6BBC02602D9CC00C9D1B4 /* AppDelegate.swift in Sources */,
+				EBD6BBE42602E5AF00C9D1B4 /* CollegeModel.swift in Sources */,
 				EBD6BBCA2602D9CC00C9D1B4 /* CoreDataRelationship.xcdatamodeld in Sources */,
 				EBD6BBC22602D9CC00C9D1B4 /* SceneDelegate.swift in Sources */,
+				EBD6BBDE2602E1AB00C9D1B4 /* DatabaseHelper.swift in Sources */,
+				EBD6BBD92602DEAE00C9D1B4 /* CollegeFormViewController.swift in Sources */,
+				EBD6BBE92602F95200C9D1B4 /* CollegeCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
