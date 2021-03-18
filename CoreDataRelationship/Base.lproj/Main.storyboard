@@ -193,6 +193,7 @@
                         <outlet property="collegeCityTxt" destination="J7T-lS-gw0" id="MbH-pW-vHD"/>
                         <outlet property="collegeNameTxt" destination="moB-bW-rkx" id="cT8-13-0T7"/>
                         <outlet property="collegeUniversityTxt" destination="o1J-BN-FIx" id="QPp-mQ-ZH8"/>
+                        <outlet property="saveButton" destination="Ty1-Ag-Q0w" id="4yb-Q6-3TR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e4p-zJ-Fkn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

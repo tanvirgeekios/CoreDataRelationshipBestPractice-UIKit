@@ -10,6 +10,7 @@ import CoreData
 class DatabaseHelper: NSObject {
     
     static let shared = DatabaseHelper()
+    
     let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
     
     func saveCollegeToCoreData(college:CollegeModel){
