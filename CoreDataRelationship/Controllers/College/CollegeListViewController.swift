@@ -39,6 +39,22 @@ class CollegeListViewController: UIViewController, UITableViewDelegate, UITableV
         cell.collegeAddressTxt.text = arrCollege[indexPath.row].address ?? "No Address"
         return cell
     }
+    func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        return true
+    }
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete{
+            DatabaseHelper.shared.deleteCollege(college: arrCollege[indexPath.row])
+            arrCollege.remove(at: indexPath.row)
+            self.collegeListTable.deleteRows(at: [indexPath], with: .automatic)
+        }
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let collegeDetailVC = self.storyboard?.instantiateViewController(identifier: "CollegeDetailTableViewController") as! CollegeDetailTableViewController
+        collegeDetailVC.college = arrCollege[indexPath.row]
+        self.navigationController?.pushViewController(collegeDetailVC, animated: true)
+    }
     
     //MARK:- Actions
     @IBAction func addButtonClicked(_ sender: UIBarButtonItem) {

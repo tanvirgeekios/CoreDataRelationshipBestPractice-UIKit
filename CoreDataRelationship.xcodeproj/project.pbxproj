@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EB3C489E26045250009F5F1C /* CollegeDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3C489D26045250009F5F1C /* CollegeDetailTableViewController.swift */; };
 		EBD6BBC02602D9CC00C9D1B4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD6BBBF2602D9CC00C9D1B4 /* AppDelegate.swift */; };
 		EBD6BBC22602D9CC00C9D1B4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD6BBC12602D9CC00C9D1B4 /* SceneDelegate.swift */; };
 		EBD6BBC42602D9CC00C9D1B4 /* CollegeListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD6BBC32602D9CC00C9D1B4 /* CollegeListViewController.swift */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EB3C489D26045250009F5F1C /* CollegeDetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollegeDetailTableViewController.swift; sourceTree = "<group>"; };
 		EBD6BBBC2602D9CC00C9D1B4 /* CoreDataRelationship.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreDataRelationship.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBD6BBBF2602D9CC00C9D1B4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EBD6BBC12602D9CC00C9D1B4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 			children = (
 				EBD6BBC32602D9CC00C9D1B4 /* CollegeListViewController.swift */,
 				EBD6BBD82602DEAE00C9D1B4 /* CollegeFormViewController.swift */,
+				EB3C489D26045250009F5F1C /* CollegeDetailTableViewController.swift */,
 			);
 			path = College;
 			sourceTree = "<group>";
@@ -198,6 +201,7 @@
 				EBD6BBCA2602D9CC00C9D1B4 /* CoreDataRelationship.xcdatamodeld in Sources */,
 				EBD6BBC22602D9CC00C9D1B4 /* SceneDelegate.swift in Sources */,
 				EBD6BBDE2602E1AB00C9D1B4 /* DatabaseHelper.swift in Sources */,
+				EB3C489E26045250009F5F1C /* CollegeDetailTableViewController.swift in Sources */,
 				EBD6BBD92602DEAE00C9D1B4 /* CollegeFormViewController.swift in Sources */,
 				EBD6BBE92602F95200C9D1B4 /* CollegeCell.swift in Sources */,
 			);

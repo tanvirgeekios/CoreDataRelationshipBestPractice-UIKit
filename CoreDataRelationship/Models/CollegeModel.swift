@@ -13,3 +13,5 @@ struct CollegeModel{
     let collegeUniversity:String
     let collegeAddress:String
 }
+
+

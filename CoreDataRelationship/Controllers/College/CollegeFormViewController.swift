@@ -43,23 +43,23 @@ class CollegeFormViewController: UIViewController {
         guard let collegeCity = collegeCityTxt.text else{return nil}
         guard let collegeUniversity = collegeUniversityTxt.text else{return nil}
         
-       
-        if collegeName.isEmpty{
+        
+        if collegeName.trimmingCharacters(in: .whitespaces).isEmpty{
             message += "College Name Can't be empty. "
         }
         
         
-        if collegeAddress.isEmpty{
+        if collegeAddress.trimmingCharacters(in: .whitespaces).isEmpty{
             message += "College address Can't be empty. "
         }
         
         
-        if collegeCity.isEmpty{
+        if collegeCity.trimmingCharacters(in: .whitespaces).isEmpty{
             message += "College City Can't be empty. "
         }
         
         
-        if collegeUniversity.isEmpty{
+        if collegeUniversity.trimmingCharacters(in: .whitespaces).isEmpty{
             message += "College university Can't be empty. "
         }
      

@@ -38,4 +38,14 @@ class DatabaseHelper: NSObject {
         }
         return arrCollege
     }
+    
+    func deleteCollege(college:College){
+        context.delete(college)
+        do{
+            try context.save()
+            print("College deleted from core data")
+        }catch{
+            print("Error Deleting College: \(error.localizedDescription)")
+        }
+    }
 }
