@@ -48,4 +48,14 @@ class DatabaseHelper: NSObject {
             print("Error Deleting College: \(error.localizedDescription)")
         }
     }
+    
+    func updateCollege(college:College?){
+        print("UpdateCollege pressed")
+        do{
+            try context.save()
+            print("Editing success")
+        }catch{
+            print("Error editing data")
+        }
+    }
 }

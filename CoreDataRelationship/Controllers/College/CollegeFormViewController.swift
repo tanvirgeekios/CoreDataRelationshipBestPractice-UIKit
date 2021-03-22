@@ -8,8 +8,9 @@
 import UIKit
 
 class CollegeFormViewController: UIViewController {
-
     
+    var isEdit = false
+    var college:College?
     //MARK:- outlets
     @IBOutlet weak var collegeNameTxt: UITextField!
     @IBOutlet weak var collegeUniversityTxt: UITextField!
@@ -20,19 +21,36 @@ class CollegeFormViewController: UIViewController {
     //MARK:- lifeCycles
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        if isEdit{
+            saveButton.setTitle("Update", for: .normal)
+            collegeNameTxt.text = college?.name
+            collegeUniversityTxt.text = college?.university
+            collegeCityTxt.text = college?.city
+            collegeAddressTxt.text = college?.address
+        }
     }
     
     //MARK:- actions
     @IBAction func saveButtonClicked(_ sender: Any) {
-        print("SaveButtonClicked")
-        if let newCollege = validate(){
-            DatabaseHelper.shared.saveCollegeToCoreData(college: newCollege)
-            resetTextFields()
-            view.endEditing(true)
-            showAlert(title: "Success", message: "Success Saving Data")
+        
+        if isEdit{
+            college?.name = collegeNameTxt.text
+            college?.university = collegeUniversityTxt.text
+            college?.city = collegeCityTxt.text
+            college?.address = collegeAddressTxt.text
+            DatabaseHelper.shared.updateCollege(college: college)
         }
-
+        else{
+            print("SaveButtonClicked")
+            if let newCollege = validate(){
+                DatabaseHelper.shared.saveCollegeToCoreData(college: newCollege)
+                resetTextFields()
+                view.endEditing(true)
+                showAlert(title: "Success", message: "Success Saving Data")
+            }
+        }
+        
+        
     }
     
     //MARK:- functions
@@ -62,7 +80,7 @@ class CollegeFormViewController: UIViewController {
         if collegeUniversity.trimmingCharacters(in: .whitespaces).isEmpty{
             message += "College university Can't be empty. "
         }
-     
+        
         if(message == ""){
             let newCollege = CollegeModel(collegeName: collegeName, collegeCity: collegeCity, collegeUniversity: collegeUniversity, collegeAddress: collegeAddress)
             return newCollege
